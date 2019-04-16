@@ -1,9 +1,9 @@
+#Configure https connection in Nginx
 #Runtime ubuntu 14.04
 
 
 # change owner of the file to 'ubuntu'
 chown ubuntu /etc/nginx -R
-
 
 
 # install nginx
