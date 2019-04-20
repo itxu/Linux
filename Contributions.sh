@@ -1,1 +1,1 @@
-cd /opt
+cd /root
