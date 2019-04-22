@@ -4,20 +4,35 @@ git config --list
 # Initial new local reposity file
 git init
 
-# Change username and email
-git config --global user.name "example"
-git config --global user.email example@example.com
+# Add file named example.sh before commit
+git add * 
+git add example.sh
+
+# Commit "example"
+git commit -m "example" 
+
+# Check status -s for short
+git status -s
+
+
 
 # Clone repository
 git clone https://github.com/520/Linux.git
 
-# Add file before commit
-git add *
-
-# Commit "example"
-git commit -m "example" 
-# Commit any files you've added with git add
-git commit -a 
+# Remove example.sh 
+git rm example.sh
 
 # Send to remote repository:
-git push origin master
+git push
+
+# Reset password
+git config --global --unset user.password
+git push
+
+# Change username and email
+git config --global user.name "example"
+git config --global user.email example@example.com
+
+
+
+
